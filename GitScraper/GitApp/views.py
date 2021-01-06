@@ -20,7 +20,7 @@ def FetchData(request):
     items = SortData(items)
 
     #Item contains the structured JSON data, and we pass it on to the html file as a context dictionary
-    return render(request, 'GitApp/home.html', {'items': items} )
+    return render(request, 'GitApp/index.html', {'items': items} )
 
 #Function that sorts the data fetched from the github API
 def SortData(json_content):
