@@ -11,7 +11,7 @@ def index(request):
 #Function that fetches the data from the GitHub API
 def FetchData(request):
     #We define the url from the github API, I added per_page=200 so we'd get enough repos
-    url_to_call = "https://api.github.com/search/repositories?q=created:>2020-11-30&sort=stars&order=desc&per_page=30"
+    url_to_call = "https://api.github.com/search/repositories?q=created:>2020-11-30&sort=stars&order=desc&per_page=200"
 
     #response is an object that contains the result of our call, we then use Json to format it
     response = requests.get(url_to_call)
