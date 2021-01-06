@@ -10,6 +10,8 @@ and finally the number of days that have passed since the repo was created.
 
 ### Dependencies
 
+Please use the latest updated version of this repo
+
 *Django
 
 *Python
